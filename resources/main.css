@@ -5,6 +5,31 @@ body, html {
     width: 100%;
 }
 
+section {
+    display: flex;
+    height: 100%;
+}
+
+aside{
+    width: 30%;
+    padding: 60px 50px 0px 35px;
+    font-family: 'Crimson Pro', serif;
+}
+
+.image-wrapper{
+    width: 70%;
+}
+
+aside, .image-wrapper{
+    height: 420px;
+}
+
+.containers{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 header .title{
     width: 33%;
 }
@@ -16,21 +41,16 @@ header .title{
     font-weight: 900;
 }
 
-.wrapper{
-    height: 100%;
-    width: 100%;
-}
-
 header{
     height: 55px;
     display: flex;
     justify-content: space-between;
     padding-left: 35px;
-    border-bottom:solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
 }
 
 .menu-desktop{
-    width: 67%;
+    width: 68%;
     margin: 15px 25px 0px 0px;
 }
 
@@ -56,33 +76,21 @@ nav a{
     font-size: 40px;
 }
 
-aside{
-    width: 30%;
-    padding: 40px 50px 0px 35px;
-    font-family: 'Crimson Pro', serif;
-}
-
-section{
-    display: flex;
-    flex-direction: row-reverse;
-    height: 60%;
-}
-
-aside div:first-child{
+.aside-container div:first-child{
     font-size: 120px;
     font-weight: 900;
 }
 
-aside div:nth-child(2){
-    font-size: 60px;
+.aside-container div:nth-child(2){
+    font-size: 65px;
     font-weight: 900;
-    width: 80%;
+    width: 85%;
 }
 
 aside p{
     padding-top: 10px;
     text-align: left;
-    width: 85%;
+    width: 80%;
 }
 
 .arrows-container i{
@@ -91,26 +99,17 @@ aside p{
     padding-right: 15px;
 }
 
-.image-wrapper{
-    width: 70%;
-}
-
 .image-wrapper img{
-    width: 100%;
+    max-width: 100%;
     height:auto;
 }
 
-.content{
-    display: flex;
-    justify-content: flex-end;
-    font-family: 'Crimson Pro', serif;
-}
 
 .black-container{
     background-color: black;
     color: white;
     width: 23%;
-    height: 210px;
+    height: fit-content;
     padding: 20px 30px 15px 20px;
 }
 
@@ -118,7 +117,7 @@ aside p{
     background-color:#f4dfc4 ;
     color: white;
     width: 38%;
-    height: 160px;
+    height: fit-content;
     padding: 30px 30px 15px 30px;
     align-self: flex-end;
 }
@@ -140,10 +139,6 @@ aside p{
 
 @media (max-width: 600px) {
 
-    section{
-        margin-right: 0;
-    }
-
     .menu-mobile {
         display: block;
     }
@@ -154,7 +149,7 @@ aside p{
 
     section{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .image-wrapper{
@@ -168,32 +163,35 @@ aside p{
     }
 
     aside{
-        display: flex;
-        flex-direction: column;
         width: 50%;
-        height: 200px;
+        height: fit-content;
+        padding-top: 0px;
+    }
+
+    .aside-container div:first-child{
+        font-size: 70px;
+    }
+    
+    .aside-container div:nth-child(2){
+        font-size: 40px;
     }
 
     .black-container{
         width: 50%;
-        height: 200px;
+        height: fit-content;
     }
 
-    .content{
+    .containers{
         flex-direction: column;
     }
 
     .nude-container{
         width: 90%;
-        height: 150px;
+        height: fit-content;
     }
 
     header .title{
         width: 90%;
     }
-
-
-
-
 
 }
