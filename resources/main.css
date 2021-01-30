@@ -24,6 +24,8 @@ aside, .image-wrapper{
     height: 420px;
 }
 
+/* atentie, acest .containers nu este asezat in josul viewport-ului, am atasat si un screenshot pentru ca am impresia ca la tine se vede lejer divers */
+/* vrei sa decizi tu cum se vede si sa nu existe posibilitate sa se strice structura aici, chiar daca aici vorbim deocamdata doar de desktop, de aceea aceasta este o situatie specifrica unde se implementeaza folosind pozitionarea */
 .containers{
     width: 100%;
     display: flex;
