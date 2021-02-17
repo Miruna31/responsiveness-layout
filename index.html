@@ -18,7 +18,29 @@
 
 </head>
 <body>
-    <div class="wrapper">
+    <div id="mainWrapper" class="wrapper">
+
+        <section id="mobileMenu" class="mobile-wrapper hidden">
+            <div class="mobile-inner-wrapper">
+                <div class="header-mobile">
+                    <div>Best Escapes</div>
+                    <a id="menu-icon-close"><i class="fas fa-times"></i></a>
+                </div>
+
+                <nav class="menu-mobile-open">
+                    <a>Home</a>
+                    <a>Specials</a>
+                    <a>Last Minute</a>
+                    <a>Register/Login</a>
+                </nav>
+
+                <div class="bottom-icons">
+                    <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+                    <div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                </div>
+            </div>
+        </section>
+
         <header>
             <div class="title">
                 <h1>Best Escapes</h1>
@@ -32,7 +54,7 @@
             </nav>
 
             <nav class="menu-mobile">
-                <a><i class="fas fa-bars"></i></a>
+                <a id="menu-icon"><i class="fas fa-bars"></i></a>
             </nav>
         </header>
 
@@ -78,5 +100,11 @@
 
     </div>
     
+    <script src="resources/main.js"></script>
+
+    <noscript>
+        Your browser currently does not support or has JS disabled.
+    </noscript>
+
 </body>
 </html>

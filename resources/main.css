@@ -144,6 +144,87 @@ aside p{
     width: 80px;
 }
 
+/* for JS part */
+.mobile-inner-wrapper{
+    background-color:black;
+    padding-top: 20px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header-mobile div:first-of-type{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header-mobile a:first-of-type{
+    font-size: 40px;
+    padding-right: 15px;
+    color:  #c09c78;
+    cursor: pointer;
+}
+
+.header-mobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 40px 15px;
+}
+
+.menu-mobile-open{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    color: white;
+}
+
+.menu-mobile-open a{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    padding-top: 15px;
+    font-family:  sans-serif;
+    opacity: 0.8;
+}
+
+.menu-mobile-open a:hover{
+   opacity: 1;
+    cursor:pointer;
+}
+
+.bottom-icons{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bottom-icons div{
+   width: 50%;
+   border: lightgray;
+   text-align: center;
+   border-top: solid 1px white;
+   padding: 20px;
+}
+
+.bottom-icons div:first-of-type{
+    border-right: solid 1px white;
+}
+
+.bottom-icons a {
+    font-size: 30px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
 @media (max-width: 600px) {
 
     .menu-mobile {
